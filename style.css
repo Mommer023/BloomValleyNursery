@@ -1,0 +1,274 @@
+/* General Styles for All Pages */
+html, body {
+  font-family: 'Calibri', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #557a93;
+  color: #00231c;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Top navigation bar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #557A93;
+  color: white;
+  padding: 10px 20px;
+  border-bottom: 3px solid #00231c;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #00231c;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  font-family: 'Calibri', sans-serif;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #7da1b5;
+  color: white;
+}
+
+/* Main content styling */
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #00231c;
+  font-family: 'Georgia', serif;
+}
+
+/* Footer */
+footer {
+  background-color: #7da1b5;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Homepage Image Links (3 horizontal images) */
+.image-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  max-width: 100%;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin: 0 auto;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.image-box {
+  text-align: center;
+  flex: 1; /* Ensure boxes are of equal width */
+  max-width: 33.33%; /* Limit the max width of each box to 1/3 of the container */
+  min-width: 200px; /* Minimum width to prevent shrinking too much */
+  box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+.image-box img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  display: block;
+}
+
+.image-box p {
+  font-family: 'Calibri', sans-serif;
+  font-size: 16px;
+  color: #00231c;
+  margin-top: 10px;
+}
+
+/* About Page Specific Styles */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.left-column,
+.right-column {
+  padding: 20px;
+  background-color: #CACADD; /* Change the background color here */
+  border-radius: 8px;
+}
+
+.left-column h1,
+.right-column h2 {
+  font-family: 'Georgia', serif;
+  color: #00231c;
+}
+
+.left-column p,
+.right-column p {
+  font-family: 'Calibri', sans-serif;
+  font-size: 16px;
+}
+
+/* Gallery Page Specific Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.gallery a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Order Page Specific Styles */
+.order-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.left-column,
+.right-column {
+  padding: 20px;
+  background-color: #CACADD; /* Change the background color here */
+  border-radius: 8px;
+}
+
+.left-column h2,
+.right-column h2 {
+  font-family: 'Georgia', serif;
+  color: #00231c;
+}
+
+.left-column p,
+.right-column p {
+  font-family: 'Calibri', sans-serif;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+form input, form textarea, form select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #7da1b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #557A93;
+}
+
+/* Checkbox Group Styling */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #CACADD; /* Set the font color to #CACADD */
+  font-family: 'Calibri', sans-serif;
+  background-color: transparent; /* Ensure no background color */
+  padding: 0; /* Ensure no extra padding */
+  margin: 0; /* Remove any default margin */
+}
